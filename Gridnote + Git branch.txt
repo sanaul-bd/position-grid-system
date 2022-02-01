@@ -1,0 +1,41 @@
+What about Git
+make a new branch ex:
+Git checkout -b grid-items-tag-update" enter
+
+check branch
+git branch enter:
+
+
+
+
+first make a html:5 structure. if done = ok
+
+then make it fast...
+Go for make some blockbust====
+
+
+01- write a .container nd hit the Tab button.
+
+02- article.article.article-$*15>h3{article-$} এভাবে লিখে এন্টার/ট্যাব চাপলে একটা কন্টেইনারের মধ্যে ১৫ টা আর্টিক্যাল নামের div হবে সাথে ১৫ টা class + ১৫ টা সিরিয়াল ভাবে h3 ট্যাগ।
+
+03- .container কে style করো
+                        .container{
+                            display: Grid; এতে কন্টিনারের ভিতরের সব Grid হিসেবে align হবে।
+                            grid-template-column: value/ 250px 2590px 250p/ 250px 1fr 1fr;
+                            Grid-gap: 10px;
+                                    }
+
+04- কোন div কে GRID সিস্টেমে উপরে নিচে বাড়াতে চাইলে 
+    .article-1{
+        Grid-row: 1/ span 5; তাহলে সেই div টা ১-৬ পর্যন্ত উপরে নিচে লম্বা হয়ে যাবে।
+    }
+
+05- কোন div কে GRID সিস্টেমে পাশা-পাশি বাড়াতে চাইলে 
+    .article-2{
+        Grid-row: 2/ span 3/4; তাহলে সেই div টা ১-৬ পর্যন্ত পাশা-পাশি লম্বা হয়ে যাবে।
+        প্রথম 2 টা শুরুর স্থান পরের 2 টা শেষের স্থান
+        }
+06- 
+07- 
+08- 
+09- 

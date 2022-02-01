@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>position</title>
+
+
+        <style>
+            .Position{
+                display: flex;
+            }
+
+            .box{
+                width: 100px;
+                height: 120px;
+                background: orange;
+                margin: 0 5px 0 0;
+            }
+
+
+
+            /* photo-frame */
+            .photo-frame{
+                width: 300px;
+                height: 168px;
+                border: 8px solid goldenrod;
+                border-radius: 10px;
+                position: relative;
+                margin: 0 10px 10px 5px;
+                overflow: hidden;
+            }
+            /* photo transform */
+            .photo-frame:hover .photo img{
+                transform: scale(1.1);
+                transition: 2s;
+            }
+            .photo-album{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .photo-frame .photo img{
+                width: 100%;
+            }
+
+            .photo-details{
+                position: absolute;
+                width: 300px;
+                height: 168px;
+                top: 0;
+                display: none;
+            }
+
+            .photo-frame:hover .photo-details{
+                display: block;
+                background: rgba(217, 165, 32, .40);
+            }
+
+            .photo-frame:hover .photo-details h3, p{
+                color: white;
+                background: rgba(0, 0, 0, .2);
+                text-align: center;
+                padding: 10px 20px;
+                line-height: 20px;
+            }
+
+            .photo-details h3{
+                transition: 5s;
+            }
+        </style>
+
+
+    </head>
+    <body>
+
+        <!-- My- Photo Book -->
+        <h1>My Photo Book</h1>
+        <section class="photo-album">
+            <!-- box-1 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-2 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-4 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-5 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-6 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-7 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-8 -->
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/tiger.jpg" alt="tiger">
+                </div>
+                <!-- details -->
+                <div class="photo-details">
+                    <h3>Royel Bengal Tiger</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- box-9 -->
+            <!-- box-10 -->
+            <!-- box-11 -->
+            <!-- box-12 -->
+            <!-- box-13 -->
+        </section>
+
+
+        <!-- position -->
+        <h1>Position</h1>
+        <h3>More Position</h3>
+
+        <div class="container Position">
+            <!-- box -->
+            <div class="box box-1">
+                <h3>box-1</h3>
+            </div>
+            <div class="box box-2">
+                <h3>box-2</h3>
+            </div>
+            <div class="box box-3">
+                <h3>box-3</h3>
+            </div>
+            <div class="box box-4">
+                <h3>box-4</h3>
+            </div>
+        </div>
+
+    </body>
+</html>
